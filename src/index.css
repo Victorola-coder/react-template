@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid redd; */
+}
+
+body {
+  color: white;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Sailec", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  @apply w-1 bg-transparent;
+}
+
+body::-webkit-scrollbar-corner {
+  @apply bg-transparent;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar-track {
+  @apply bg-main;
+}
+
+body::-webkit-scrollbar-track-piece {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply transition-all duration-500 
+  rounded-full bg-dark hover:bg-dark/60;
+}
+
+/* FONTS */
+@font-face {
+  font-family: Cabinet;
+  src: url("../../fonts/cabinet/CabinetGrotesk-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Sailec;
+  src: url("../../fonts/sailec/Sailec-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SailecMed;
+  src: url("../../fonts/sailec/Sailec-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SailecBold;
+  src: url("../../fonts/sailec/Sailec-Bold.otf") format("opentype");
+}
