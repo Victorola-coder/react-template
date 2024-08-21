@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import { Home, NotFound } from "./pages";
+
 // import { Scroll } from "./animation";
 
 const router = createBrowserRouter([
