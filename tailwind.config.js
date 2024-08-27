@@ -3,7 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        // add fonts families to the theme
+      },
 
       keyframes: {
         "fade-effect": {
@@ -68,6 +70,8 @@ export default {
           DEFAULT: "#595D62",
           100: "#F5F5F5",
         },
+
+        // change colors to your taste this is just templates
       },
     },
   },

@@ -13,9 +13,7 @@
 body {
   color: black;
   background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "Sailec", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -47,21 +45,10 @@ body::-webkit-scrollbar-thumb {
 
 /* FONTS */
 @font-face {
-  font-family: Cabinet;
-  src: url("../../fonts/cabinet/CabinetGrotesk-Variable.ttf") format("truetype");
+  font-family: "custom-fonts";
+  src: url("link_to_custom_font.otf") format("truetype");
 }
 
-@font-face {
-  font-family: Sailec;
-  src: url("../../fonts/sailec/Sailec-Regular.otf") format("opentype");
-}
+/* IF extenstio IS ttf */
 
-@font-face {
-  font-family: SailecMed;
-  src: url("../../fonts/sailec/Sailec-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: SailecBold;
-  src: url("../../fonts/sailec/Sailec-Bold.otf") format("opentype");
-}
+/* ADD MORE AS IT GOES */

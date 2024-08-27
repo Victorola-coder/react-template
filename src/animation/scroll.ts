@@ -1,4 +1,5 @@
-// import gsap from 'gsap';
+// scroll animation is always sweet to experience.
+
 import Lenis from "lenis";
 
 export default function scroll() {
@@ -19,16 +20,3 @@ export default function scroll() {
 
   requestAnimationFrame(raf);
 }
-
-// === i might have to use this later
-// const lenis = new Lenis({
-//   lerp: 0.1,
-// });
-
-// lenis.on("scroll", ScrollTrigger.update);
-
-// gsap.ticker.add(time => {
-//   lenis.raf(time * 1000);
-// });
-
-// gsap.ticker.lagSmoothing(0);
