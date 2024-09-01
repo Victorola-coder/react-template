@@ -42,8 +42,8 @@ export const MONTH_NAMES = [
 export const formatHoursTo24 = (hours: number, minutes: number): string => {
   if (hours === 0 && minutes === 0) return "";
 
-  const isPM: boolean = hours > 12;
-  const formattedHours: number = isPM ? hours - 12 : hours;
+  const isPM: boolean = hours >= 12;
+  const formattedHours: number = isPM ? hours - 12 || 12 : hours || 12; // Handles 0 and 12 hours formatting
   const newMinutes: string = `${minutes < 10 ? "0" : ""}${minutes}`;
 
   return `${formattedHours}:${newMinutes} ${isPM ? "PM" : "AM"}`;
@@ -58,13 +58,12 @@ const getFormattedDate = (
   const month = MONTH_NAMES[date.getMonth()];
   const year = date.getFullYear();
   const hours = date.getHours();
-
   const minutes: number = date.getMinutes();
 
   if (prefix) return `${prefix} - ${formatHoursTo24(hours, minutes)}`;
 
-  return `${day} de ${month} ${
-    !hideYear ? `de ${year}` : ""
+  return `${day} of ${month} ${
+    !hideYear ? `of ${year}` : ""
   } - ${formatHoursTo24(hours, minutes)}`;
 };
 
@@ -84,20 +83,20 @@ export const timeAgo = (dateParam: string) => {
   const isThisYear = today.getFullYear() === date.getFullYear();
 
   if (seconds < 5) {
-    return "Hace unos momentos";
+    return "A few moments ago";
   } else if (seconds < 60) {
-    return `Hace ${seconds} segundos `;
+    return `${seconds} seconds ago`;
   } else if (seconds < 90) {
-    return "Hace un minuto";
+    return "A minute ago";
   } else if (minutes < 60) {
-    return `Hace ${minutes} minutos`;
+    return `${minutes} minutes ago`;
   } else if (isToday) {
-    return getFormattedDate(date, "Hoy"); // Today @ 10:20
+    return getFormattedDate(date, "Today"); // Today @ 10:20
   } else if (isYesterday) {
-    return getFormattedDate(date, "Ayer"); // Yesterday @ 10:20
+    return getFormattedDate(date, "Yesterday"); // Yesterday @ 10:20
   } else if (isThisYear) {
     return getFormattedDate(date, "", true); // 10. January @ 10:20
   }
 
-  return getFormattedDate(date); // 10. January 2024. at 10:20
+  return getFormattedDate(date); // 10. January 2024 at 10:20
 };
