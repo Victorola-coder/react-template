@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://template.victorola.me/sitemap.xml
