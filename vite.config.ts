@@ -8,7 +8,8 @@ export default defineConfig({
     react(),
     Sitemap({
       hostname: "https://linktowebsite.com",
-      dynamicRoutes: ["/"],
+      dynamicRoutes: ["/", "/about"],
+      // add more routes in the dynamic routes array
     }),
   ],
 });
