@@ -10,7 +10,7 @@
 //   META_URL,
 // } from "../../constants";
 
-import { SEOdata } from "../constants/seo";
+import { SEOdata } from "../../constants/seo";
 import { Helmet } from "react-helmet-async";
 
 export default function SEO({

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { faqs } from "../data/data";
-import { P, H2 } from "./typography";
+import { faqs } from "../../data/data";
+import { P, H2 } from "../typography";
 import { motion } from "framer-motion";
-import { Eyes, MinusIcon, PlusIcon } from "./svgs";
+import { Eyes, MinusIcon, PlusIcon } from "../svgs";
 
 interface Faq {
   question: string;
