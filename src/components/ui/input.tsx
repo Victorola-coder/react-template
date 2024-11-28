@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Email, User } from "./svgs";
+import { Email, User } from "../svgs";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   type: string;
