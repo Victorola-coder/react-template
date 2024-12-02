@@ -9,7 +9,7 @@ export default function Image({ ...props }: ImageProps) {
       loading="lazy"
       draggable={false}
       decoding="async"
-{/*       fetchPriority="high" */}
+      //  fetchPriority="high"
       referrerPolicy="no-referrer"
     />
   );

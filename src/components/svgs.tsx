@@ -1,4 +1,4 @@
-// I always like to define my resuable svgs in a single tsx file and reuse as many as possible
+// I always like to define my reusable svgs in a single tsx file and reuse as many as possible
 
 import clsx from "clsx";
 

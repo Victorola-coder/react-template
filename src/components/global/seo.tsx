@@ -1,34 +1,22 @@
-// import {
-//   META_DESCRIPTION,
-//   META_TITLE,
-//   META_AUTHOR,
-//   META_IMAGE,
-//   META_KEYWORDS,
-//   META_PUBLISHED_AT,
-//   META_PUBLISHER,
-//   META_TYPE,
-//   META_URL,
-// } from "../../constants";
-
 import { SEOdata } from "../../constants/seo";
 import { Helmet } from "react-helmet-async";
 
 export default function SEO({
-  title,
-  description,
-  author,
-  image,
   url,
-  children,
+  image,
+  title,
+  author,
   creator,
+  children,
+  description,
 }: {
   title: string;
-  description?: string;
-  author?: string;
-  image?: string;
   url?: string;
-  children?: React.ReactNode;
+  image?: string;
+  author?: string;
   creator?: string;
+  description?: string;
+  children?: React.ReactNode;
 }) {
   return (
     <Helmet>

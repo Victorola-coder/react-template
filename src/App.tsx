@@ -9,7 +9,7 @@ import { Home, NotFound } from "./pages";
 
 import { Scroll } from "./animation";
 
-// this is just for dome paages you want to repeat same component
+// this is just for dome pages you want to repeat same component
 const Root = () => {
   return (
     <div>
