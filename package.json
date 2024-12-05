@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^22.10.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.1",
     "lenis": "^1.1.13",
