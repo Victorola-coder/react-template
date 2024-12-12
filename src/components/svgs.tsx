@@ -2,11 +2,6 @@
 
 import clsx from "clsx";
 
-interface SVGProps {
-  className?: string;
-  onClick?: () => void;
-}
-
 export const Email = ({ className }: SVGProps) => {
   return (
     <svg

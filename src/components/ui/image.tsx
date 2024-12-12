@@ -1,7 +1,3 @@
-interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  className?: string;
-}
-
 export default function Image({ ...props }: ImageProps) {
   return (
     <img

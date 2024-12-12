@@ -4,17 +4,6 @@ import { faqs } from "../../data/data";
 import { motion } from "framer-motion";
 import { Eyes, MinusIcon, PlusIcon } from "../svgs";
 
-interface Faq {
-  question: string;
-  answer: string;
-}
-
-interface FaqItemProps {
-  faq: Faq;
-  isOpen: boolean;
-  toggle: () => void;
-}
-
 const FaqItem = ({ faq, isOpen, toggle }: FaqItemProps) => {
   //   const [isOpen, setIsOpen] = useState(false);
 

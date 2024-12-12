@@ -1,7 +1,7 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 @tailwind variants;
+@tailwind utilities;
+@tailwind components;
 
 * {
   margin: 0;
@@ -59,10 +59,11 @@ html.lenis {
 }
 
 /* FONTS */
-@font-face {
+/* uncomment to use  */
+/* @font-face {
   font-family: "custom-fonts";
   src: url("link_to_custom_font.otf") format("truetype");
-}
+} */
 
 /* IF extenstio IS ttf */
 

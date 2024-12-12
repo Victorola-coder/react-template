@@ -1,5 +1,5 @@
-import { SEOdata } from "../../constants/seo";
 import { Helmet } from "react-helmet-async";
+import { SEOdata } from "../../constants/seo";
 
 export default function SEO({
   url,
